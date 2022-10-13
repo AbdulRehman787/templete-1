@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./beach3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container-1 .text {
+    position: absolute;
+    bottom: 70px;
+    background-color: rgba(255, 187, 0, 0.7);
+    width: 69%;
+    padding-left: 15px;
+    line-height: 50px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83px;
+    margin-block-end: 0.83px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+}
+
+.container-1 .text:hover {
+    background-color: rgba(255, 149, 0, 0.7);
+}
+
+.left {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding: 10px 28px;
+}
+
+.card {
+    width: 470px;
+}
+
+.card-img {
+    border-top: 9px solid orange;
+    width: 100%;
+    line-height: normal;
+}
+
+.card-title {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    line-height: 60px;
+    margin: 0;
+}
+
+.card-para {
+    font-size: 15px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding: 10px 28px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-1 .text {
+        justify-content: space-aroundA;
+    }
+}    
+@media only screen and (max-width: 600px) {
+
+        .left,
+        .right {
+            flex-direction: column;
+            margin-top: -25px;
+        }
+    }
